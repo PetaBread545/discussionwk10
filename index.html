@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript">
+        function displayInformation () {
+            // Your code goes here. 
+            // Do not change any other code in this file
+            // All of the steps below must be achieved using JavaScript!
+    
+            
+            // 1. Change the h1 element to your name.
+            document.querySelector("h1").innerHTML = "Peter Susanto";
+            
+               
+            // 2. Update the three span elements using ONLY JavaScript
+            document.querySelectorAll("span")[0].innerHTML = window.location.href;
+            document.querySelectorAll("span")[1].innerHTML = document.querySelectorAll("h2").length;
+            document.querySelectorAll("span")[2].innerHTML = Date();
+                
+    
+            // 3. Change the background color and margin for the entire page.
+            document.querySelector("body").style.backgroundColor = ("#000000");
+            document.querySelector("body").style.margin = ("50px");
+                
+        }
+    
+        // 4. If someone uses the keyboard shortcut to copy the words "Thank you for visiting!" then add the words "Go Blue" to the final div.  
+        function changeColor(){
+            
+        }
+        // Each occurrence should be on a separate line.  Don't use 
+        // paragraphs. 
+    
+                   
+    </script>
+
+    <title>About</title>
+</head>
+<body onload="displayInformation()">
+    <header>
+        <a class="skip" href ="#main">Skip to Main Content</a>
+		<nav>
+			<ul class="navigation">
+				<li class="active navBar">About</li>
+				<li class="navBar"><a href ="travel.html">Travel</a></li>
+				<li class="navBar"><a href="pets.html">Pets</a></li>
+				<li class="navBar"><a href = "recipes.html">Recipes</a></li>
+			</ul>
+		</nav>
+	</header>
+    <main id="main">
+
+        <div>
+            <h2>Use JavaScript to display the following information here:</h2>
+	        <p>
+                The URL of this page is: <span id = "URL"></span><br/>
+                The number of H2 items for this page: <span id = "items"></span><br/>
+                The current date/time is: <span id = "time"></span><br/>
+            </p>
+
+		    <p oncopy="copyFunction()">Thank you for visiting!</p>
+
+	        
+            <div id="cheer"></div>
+        </div>
+
+        <h1>About Me</h1>
+        <div class="contentSection activeSection index">
+            <p>Welcome to my website, where you can learn about my favorite foods, my adorable pets, and my dream vacation destinations! </p>
+        </div>
+
+        <div class="contentSection active index">
+        <h2 class="index">Hobbies and Interests</h2>
+        <div>
+            <ul class="indexList">
+                <li>Archery</li>
+                <li>Video Games</li>
+                <li>Working Out</li>
+                <li>Travelling</li>
+                <li>Eating good food</li>
+                <li>Starting to get into cooking</li>
+            </ul>
+        </div>
+
+        </div>
+
+        <div class="contentSection activeSection index">
+            <h2 class="index">Fun Facts</h2>
+            <div>
+                <ul class="indexList">
+                    <li>I have 2 siblings and all of us were born in three different countries</li>
+                    <li>I used to shoot competitive archery (trying to get back into it)</li>
+                    <li>I am a triple citizen</li>
+                </ul>
+            </div>
+        </div>
+        <div class="contentSection activeSection index">
+            <h2 class="index">Some bops</h2>
+            <ul class="things">
+                <li><iframe src="https://www.youtube.com/embed/dCfCzzCyMU4" role="video" title="Djoaria-label attribute cannot be used on a a with no valid role attribute. Roddy (Official Audio)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li> 
+                <li><iframe src="https://www.youtube.com/embed/Bk1U847h2MI" role="video" title="Q - TODAY (Official Video)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                <li><iframe src="https://www.youtube.com/embed/_sOKkON_UnQ" role="video" title="4:00 A.M." allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+            </ul>
+        </div>
+        <div></div>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Recipes</title>
+    
+</head>
+<body>
+    <header>
+        <a class ="skip" href = "#main">Skip to Main Content</a>
+		<nav>
+			<ul class="navigation">
+				<li class="navBar"><a href = "index.html">About</a></li>
+				<li class="navBar"><a href ="travel.html">Travel</a></li>
+				<li class="navBar"><a href="pets.html">Pets</a></li>
+				<li class="active navBar">Recipes</li>
+			</ul>
+		</nav>
+	</header>
+
+    <main id="main">
+        <h1>Recipes</h1>
+        <div class="scrollContent">
+        <div class="contentSection activeSection">
+            <h2>Double Chocolate Cookies</h2>
+            <img class="foodPic" src="images/double_chocolate_cookies.png" width = "400" alt="Pile of delicious chocolate cookies.">
+
+            <p><strong>Origin: Michigan</strong></p>
+            <p><strong>Source: Family Recipe</strong></p>
+            <p><strong>Category: Dessert</strong></p>
+
+            <div class="ingredientSection">
+                <h3>Ingredients</h3>
+                <ul class="ingredientList">
+                    <li>Unsalted butter</li>
+                    <li>Granulated Sugar</li>
+                    <li>Packed light or dark brown sugar</li>
+                    <li>Large egg</li>
+                    <li>Pure vanilla extract</li>
+                    <li>Semi-sweet chocolate chunks (melted)</li>
+                    <li>All-purpose flour </li>
+                    <li>Natural unsweetened cocoa powder</li>
+                    <li>Baking soda</li>
+                    <li>Salt</li>
+                    <li>Semi-sweet chocolate chunks</li>
+                </ul>
+            </div>
+            <div class="recipeSection">
+                <h3>Recipe Steps</h3>
+                <ol class="recipeSteps">
+                    <li>In a mixing bowl cream together the butter, granulated sugar, and brown sugar</li>
+                    <li>Add the egg and vanilla extract and beat well</li>
+                    <li>Add the melted chocolate</li>
+                    <li>In a separate bowl combine the flour, baking soda, cocoa powder and salt</li>
+                    <li>Combine the wet and dry ingredients</li>
+                    <li>Add the unmelted chocolate chunks. </li>
+                    <li>Form 15 cookies and place on a baking sheet.</li>
+                    <li>Cooke for 12 to 13 minutes at 350 degrees.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="contentSection">
+            <h2>Easy Spaghetti</h2>
+            <img class="foodPic" src="images/spaghetti1.jpg" width = "300" alt="A plate of spaghetti">
+            <p>Origin: Italy</p>
+            <p>Source: My mother</p>
+            <p>Category: Entree</p>
+
+            <div class="ingredientSection">
+                <h3>Ingredients</h3>
+                <ul class="ingredientList">
+                    <li>Jar of spaghetti sauce (I prefer Ragu)</li>
+                    <li>1/2 large onion</li>
+                    <li>3 lbs 80/20 ground beef</li>
+                    <li>Pasta noodles of your choice</li>
+                    <li>Optional: Cheese of your choice</li>
+                </ul>
+            </div>
+            <div class="recipeSection">
+                <h3>Recipe Steps</h3>
+                <ol class="recipeSteps">
+                    <li>On medium heat, add ground beef into a pan</li>
+                    <li>Once half cooked, add diced onions</li>
+                    <li>Cook until meat is done</li>
+                    <li>Remove excess fat/grease</li>
+                    <li>In a pot, add jar of spaghetti sauce and heat until simmering</li>
+                    <li>Add contents of the pan into the pot</li>
+                    <li>Let simmer for a few minutes</li>
+                    <li>At the same time, use another pot to cook your noodles</li>
+                    <li>Serve when noodles are done</li>
+                    <li>Add cheese if desired</li>
+                </ol>
+            </div>
+            <h3>Additional Images</h3>
+            <div class="photo_gallery">
+                <img src="images/spaghetti2.jpg" width = "200" alt="A plate of spaghetti next to a pot of spaghetti sauce">
+                <img src="images/THUMB-LINK-2020-2-1200x675.avif" alt="Simple plate of spaghetti">
+            </div>
+        </div>
+
+
+        <div class="contentSection">
+            <h2>Instant Ramen</h2>
+            <img class="foodPic" src="images/maruchan.jpg" width = "400" alt="A humble bowl of Maruchan ramen.">
+            <p><strong>Origin: Japan</strong></p>
+            <p><strong>Source: Back of the package</strong></p>
+            <p><strong>Category: Quick snack/meal</strong></p>
+            
+            <div class="ingredientSection">
+                <h3>Ingredients</h3>
+                <ul class="ingredientList">
+                    <li>A pack of your favorite instant ramen</li>
+                </ul>
+            </div>
+
+            <div class="recipeSection">
+                <h3>Recipe Steps</h3>
+                <ol class="recipeSteps">
+                    <li>Fill a pot with enough water to submerge the noodles</li>
+                    <li>In a bowl or plate (if its soupy or not), empty out the seasoning and topping packs</li>
+                    <li>When boiling, add the noodles to the pot</li>
+                    <li>When adequetly soft, place the noodles into the plate/bowl</li>
+                    <li>Add water from the pot if the noodles are soupy</li>
+                    <li>Mix and enjoy</li>
+                </ol>
+            </div>
+            <h3>Additional Images</h3>
+            <div class="photo_gallery"> 
+                
+                <img src="images/varietyramen.jpg" width = "200" alt="A varied assortment of different instant ramen">
+                <img src="images/shin.jpg" width = "200" alt="Shin ramen">
+            </div>
+        </div>
+        <div class="rotateButtons">
+            <button onclick="showNextSection(0)"> &#60;-- Previous</button>
+            <button onclick="showNextSection(1)"> Next --&#62;</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    </main>
+    
+</body>
+</html>

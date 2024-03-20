@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pets</title>
+</head>
+<body>
+    
+    <header>
+        <a class ="skip" href = "#main">Skip to Main Content</a>
+		<nav>
+			<ul class="navigation">
+				<li class="navBar"><a href = "index.html">About</a></li>
+				<li class="active navBar">Travel</li>
+				<li class="navBar"><a href="pets.html">Pets</a></li>
+				<li class="navBar"><a href = "recipes.html">Recipes</a></li>
+			</ul>
+		</nav>
+	</header>
+    <main id="main">
+        <h1>Travel</h1>
+        <div class="scrollContent">
+        <div class="contentSection activeSection">
+            <h2>Bali, Indonesia</h2>
+            <img src="images/bali1.jpg" width = "500" alt="Beautiful traditional architecture in Bali">
+            <p><strong>Location: </strong> South-east Asia</p>
+
+            <p>Bali is a beautiful tropical island in Indonesia. Once a more lowkey tourist destination, the island is now a tourist hotspot, known for its beautiful beaches, rich culture, and exotic wildlife. As an Indonesian, I've visited Bali twice and loved it both times. One of the key attractions of Bali is its incredibly cheap prices for lodging, food, and activities.</p>
+            <h3>Photo Gallery</h3>
+            <div class="photo_gallery">
+                <img src="images/bali2.jpg" width ="200" alt = "Beachline in Bali">
+                <img src="images/bali3.jpg" width ="200" alt="Views of the ocean in Bali">
+                <img src="images/baliroom.jpg" width ="200" alt="Beautiful resort in Bali">
+            </div>
+        </div>
+
+        <div class="contentSection">
+            <h2>Toronto, Canada</h2>
+            <img src="images/toronto1.jpg" width = "400" alt="City skyline of Toronto at dusk">
+            <p><strong>Location: </strong> North America</p>
+
+            <p>Toronto is a major city in Canada, home to about 3 million. Known for its diverse and multicultural population, successful sports teams, and bustling downtown, Toronto has been growing as a metropolitan city. I used to live an hour out of Toronto, so day trips to Toronto on the weekends were common. Some key attractions are the CN Tower, Nathan Philips Square, and the CF Eaton Shopping Center.
+            </p>
+            <h3>Photo Gallery</h3>
+            <div class="photo_gallery">
+                <img src="images/toronto2.jpg" width ="200" alt = "Nathan Philip Square at night">
+                <img src="images/toronto3.jpg"  width ="200" alt="A sunny day in downtown Toronto">
+            </div>
+        </div>
+        
+        <div class="contentSection">
+            <h2>Yosemite National Park, California</h2>
+            <img src="images/yose1.jpg" width = "400" alt="Landscape of Yosemite">
+            <p><strong>Location: </strong>North America</p>
+
+            <p>Yosemite National Park is a massive section of land in central California. Known for its dramatic landscape of mountains and valleys, with rivers and streams carving through. Granite cliff faces, giant sequoia forests, and tall waterfalls are some of the awesome landscapes found here. Rock climbing, camping, hiking, and kayaking are all common activities here.</p>
+            <h3>Photo Gallery</h3>
+            <div class="photo_gallery">
+                <img src="images/yose2.jpg" width = "400" alt="Yosemite Falls ">
+                <img src="images/yose3.jpg" width = "400" alt="The Half-Dome basking in the sun">
+                <img src="images/yose4.jpg" width = "400" alt="Yosemite Valley">
+            </div>
+        </div>
+            <div class="rotateButtons">
+                <button onclick="showNextSection(0)"> &#60;-- Previous</button>
+                <button onclick="showNextSection(1)"> Next --&#62;</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

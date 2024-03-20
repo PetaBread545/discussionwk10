@@ -1,0 +1,364 @@
+body{
+    background-color:#0F0f0f;  
+    color:aliceblue;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+.navBar{
+    display: block;
+    list-style: none;
+    float:left;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: #b8b8b8;
+    border-radius: 4px;
+    flex-grow:1;
+}
+
+h2{
+    font-size: 20px;
+    margin: 10px;
+    padding:5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+li{
+    display:list-item;
+    list-style: circle;
+}
+
+a{
+    text-decoration: none;
+    color:aliceblue;
+}
+
+.likes h3{
+    margin:auto;
+}
+.likes ul{
+    margin: 4%;
+}
+
+h3{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin: 3%;
+}
+
+a:hover{
+    font-size: 110%;
+    text-decoration: underline;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color:#ece4db;
+    margin: 5px;
+    padding: 2px;
+    background-color: #1D1D1D;
+}
+
+img{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: double;
+    border-width: 3px;
+    border-color:#ece4db;
+    border-radius: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding:2px;
+}
+
+
+video{
+    width: 250px;
+    height: 225px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: dashed;
+    border-width: 3px;
+    border-color:#ece4db;
+    border-radius: 7px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding:2px;
+    object-fit: cover;
+}
+
+
+p{
+    margin:8px;
+    text-align: center;
+    line-height: 1.2;
+
+}
+
+
+.contentSection{
+    background-color: #2B2B2B;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color:#878787;
+    border-style: solid;
+    margin:4px;
+
+}
+
+.likes{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.likeList{
+    list-style:circle;
+    list-style-type: circle;
+}
+
+.ingredientList{
+    padding-left: 6%;
+    list-style: circle;
+    list-style-type: circle;
+    margin:3%;
+}
+
+.ingredientSection{
+    border-style:double;
+    border-width:2px;
+    border-color:#878787;
+    border-radius: 8px;
+    background-color: #4B4B4B;
+    margin: 8px;
+}
+
+
+.recipeSection{
+    border-style:double;
+    border-width:2px;
+    border-color:#878787;
+    border-radius: 8px;
+    background-color: #4B4B4B;
+    margin: 4px 8px 8px 8px;
+}
+
+.recipeSteps{
+    padding-left: 6%;
+    margin-top:2%;
+    margin-bottom: 2%;
+    list-style: decimal;
+    list-style-type: decimal;
+}
+
+.photo_gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #4B4B4B;
+    border-radius: 7px;
+    margin:5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #878787;
+}
+
+.photo_gallery img{
+    border-width:1px;
+    border-style: double;
+    object-fit: fill;
+    width: 90%;
+}
+.photo_gallery video{
+    border-width:1px;
+    border-style: double;
+    object-fit: fill;
+    width: 90%;
+}
+
+
+
+.skip{
+    text-align: center;
+}
+
+
+.navigation{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    margin: 4px;
+    padding: 0.5%;
+    overflow: hidden;
+    background-color: #353935;
+    border-radius: 6px;
+    
+}
+button{
+    display: none; 
+}
+
+
+
+iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-style: double;
+    border-width: 2px;
+    border-color: #ece4db;
+    border-radius: 7px;
+    object-fit: contain;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 2px;
+    box-sizing: border-box;
+    max-width: 100%; 
+  }
+
+  
+
+.indexList{
+    padding-left: 5%;
+    margin-bottom: 3%;
+    line-height: 1.15;
+}
+
+.index{
+    padding:2%;
+    margin:0%;
+}
+
+.things{
+    padding:2%;
+    margin:2%;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.things li{
+    list-style-type: none;
+    list-style:none;
+}
+
+
+
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    overflow: hidden;
+  }
+
+.skip:focus{
+    position: static;
+    width: auto;
+    height: auto;
+}
+.active{
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#2D2D2D;
+    background-color: aliceblue;
+    border-color: #2D2D2D;
+}
+
+
+@media screen and (min-width: 768px){
+    body{
+        margin-bottom: 50px;
+    }
+    
+    nav{
+        position:fixed;
+        bottom: 0px;
+        width:100%;
+        border-radius: 0px;
+        
+    }
+    .navigation{
+        height:50px;
+        flex-direction: row;
+        border-radius: 0px;
+        margin:0px 0px;
+    }
+    .navBar{
+        padding-top:auto;
+        padding-bottom: auto;
+        font-size:24px;
+    }
+
+    .imgGrid{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .imgGrid img{
+        grid-column: 1/2;
+        width:85%;
+    }
+    .imgGrid p{
+        grid-column: 2/3;
+        margin:auto;
+        margin-left:20px;
+        margin-right:20px;
+    }
+    .photo_gallery{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .photo_gallery img, video{
+        margin-top:15px;
+    }
+    #maxAndFox{
+        display:flex;
+    }
+    #maxAndFox img{
+        width:180px;
+        margin:1%;
+    }
+    .contentSection{
+        margin-bottom: 120px;
+        display:none;
+    }
+    .activeSection{
+        display:block;
+    }
+    .rotateButtons{
+        position:fixed;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        width:100%;
+        bottom:55px;
+    }
+
+    button{
+        display:block;
+        border-radius:3px;
+        border-width:2px;
+        border-color:aliceblue;
+        background-color:#2B2B2B;
+        color:aliceblue;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        height:50px;
+        margin:2%;
+    }
+    .foodPic{
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+    }
+    .index{
+        margin-bottom: 2%;
+    }
+
+}
+
